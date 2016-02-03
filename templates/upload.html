@@ -1,0 +1,49 @@
+{% extends "shell.html" %}
+{% block body %}
+  <h1 class="title">
+    Upflask
+  </h1>
+  <form action="file" id="form" name="fileForm" method="post" enctype="multipart/form-data" class="uploadForm">
+    <div id="uploadButton" class="uploadButton">
+      <p id="uploadText">
+        Select a file | ファイルを選択 | Elegir un archivo | Kliknij, aby wybrać plik
+      </p>
+      <input id="file" type="file" name="file">
+    </div>
+    <input type="hidden" name="source" value="web">
+  </form>
+  <ul class="links">
+    <li>
+      <a href="/terms">Terms</a>
+    </li>
+    <li>
+      <a href="/faq">FAQ</a>
+    </li>
+    <li>
+      <a href="/termsjp">利用規約</a>
+    </li>
+    <li>
+      <a href="/faqjp">ある質問</a>
+    </li>
+    <li>
+      <a href="/termses">Condiciones</a>
+    </li>
+    <li>
+      <a href="/faqes">Preguntas frecuentes</a>
+    </li>
+    <li>
+      <a href="/termspl">Regulamin</a>
+    </li>
+    <li>
+      <a href="/faqpl">Najczęściej zadawane pytania</a>
+    </li>
+  </ul>
+  <script>
+  document.getElementById("file").onchange = function() {
+    document.getElementById("uploadText").innerHTML = "Uploading...|アップロード...|Cargando...|Wysyłanie...";
+    var button = document.getElementById("uploadButton");
+    button.className = button.className + " uploading";
+    document.getElementById("form").submit();
+  };
+  </script>
+{% endblock %}
