@@ -2,7 +2,7 @@
 A Flask file uploader
 
 Requirements:
-Python (2.7 is recommened for Windows)  
+Python3  
 Flask  
 A reverse proxy (Nginx)  
 Virtualenv (optional)  
