@@ -13,7 +13,7 @@ How to install on Linux:
 1. git clone
 2. Make virtual environment (optional but recommened) with virtualenv
 3. Source into that virtualenv
-4. pip install flask
+4. pip3 install flask
 5. Configure the "conf.py" file
 6. Create two folders, f/ and file/
 7. chmod +x server.py
@@ -22,9 +22,10 @@ How to install on Linux:
 
 How to install on Cygwin/Babun:
 1. git clone
-3. Make sure python and python-setuptools are installed
-4. easy_installs.a.b pip (a.b is the version, so, 2.7 in most cases)
-5. pip install flask (optional, but you can add "virtualenv")
+2. install python3
+3. Somehow install easy_install for python3 and install pip3 or get python3 to install pip3
+4. pip3 install flask
+5. If any errno11 errors occur, rebase and try again
 6. Configure the "conf.py" file
 7. Create two folders, f/ and file/
 8. chmod +x server.py
