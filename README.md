@@ -57,3 +57,11 @@ No idea, but you can try asking me on my Twitter.
 
 You didn't make a Mac tutorial  
 I don't own one, therefore, make it yourself.
+
+## Troubleshooting
+
+Non-ASCII character issues:
+DON'T USE PYTHON2, USE PYTHON3  
+
+Flask module not found:
+pip3 install flask (or sudo)
