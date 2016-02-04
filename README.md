@@ -32,6 +32,15 @@ How to install on Cygwin/Babun:
 9. ./server.py
 10. That's it.
 
+How to install on Windows (Not tested but should work in theory):
+1. Install the latest version of Python3 for Windows
+2. (Optional) Install Git
+3. pip or pip3 install flask
+4. Configure the "conf.py" file
+5. Create two folders, f/ and file/
+8. python or python3 or python3.5 server.py
+9. That's it.
+
 ## FAQ
 
 Why did you make this?  
