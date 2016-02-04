@@ -50,7 +50,7 @@ I wanted to create a clone of that uploader's functions, but in Python.
 This looks like...Quadfile  
 LOOKS like but that's just the static page, since I'm uncreative when it comes to web 
 design, however, the actual Python uploader is completely different from Quadfile, as <a 
-href="https://twitter.com/QuadPiece">QuadPiece</a> hasn't submitted the source code.  
+href="https://twitter.com/QuadPiece">QuadPiece</a> didn't sumbit the source code when I made it, however he has now, I've seen its complexity, and decided that it is too complex for a file uploader, so therefore, I will not make any changes to match his.  
 
 Why doesn't X work?  
 No idea, but you can try asking me on my Twitter.  
