@@ -58,7 +58,7 @@ No idea, but you can try asking me on my Twitter.
 You didn't make a Mac tutorial  
 I don't own one, therefore, make it yourself.
 
-WHY IS THERE OTHER LANGUAGES IN HERE??
+WHY IS THERE OTHER LANGUAGES IN HERE??  
 I'm too lazy to completely seperate English from the other languages, so feel free to remove them manually.
 
 ## Troubleshooting
