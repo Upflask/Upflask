@@ -6,7 +6,7 @@
   <form action="file" id="form" name="fileForm" method="post" enctype="multipart/form-data" class="uploadForm">
     <div id="uploadButton" class="uploadButton">
       <p id="uploadText">
-        Select file | ファイルを選択<br> Elegir archivo | Wybrać plik<br>Välj fil | Datei auswählen<br>اختر ملفاً
+        Select file | ファイルを選択 | Elegir archivo | Wybrać plik<br>Välj fil | Datei auswählen | اختر ملفاً
       </p>
       <input id="file" type="file" name="file">
     </div>
@@ -58,7 +58,7 @@
   </ul>
   <script>
   document.getElementById("file").onchange = function() {
-    document.getElementById("uploadText").innerHTML = "Uploading...|アップロード...<br>Cargando...|Wysyłanie...<br>Laddar upp...|Lade hoch...<br>تحميل ...";
+    document.getElementById("uploadText").innerHTML = "Uploading...|アップロード...|Cargando...|Wysyłanie...<br>Laddar upp...|Lade hoch...|تحميل ...";
     var button = document.getElementById("uploadButton");
     button.className = button.className + " uploading";
     document.getElementById("form").submit();
