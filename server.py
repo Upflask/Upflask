@@ -37,10 +37,6 @@ def terms():
 def faq():
   return render_template('faq.html', page=config["SITE_DATA"])
 
-@app.route('/apple-touch-icon.png')
-def appleTouch():
-  return send_from_directory('static', 'logo/152px.png')
-
 # Route that will process the file upload
 @app.route('/file', methods=['POST'])
 def file():
