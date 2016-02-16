@@ -37,6 +37,78 @@ def terms():
 def faq():
   return render_template('faq.html', page=config["SITE_DATA"])
 
+@app.route('/termsjp')
+def termsjp():
+  return render_template('termsjp.html', page=config["SITE_DATA"])
+
+@app.route('/faqjp')
+def faqjp():
+  return render_template('faqjp.html', page=config["SITE_DATA"])
+
+@app.route('/termses')
+def termses():
+  return render_template('termses.html', page=config["SITE_DATA"])
+
+@app.route('/faqes')
+def faqes():
+  return render_template('faqes.html', page=config["SITE_DATA"])
+
+@app.route('/termspl')
+def termspl():
+   return render_template('termspl.html', page=config["SITE_DATA"])
+
+@app.route('/faqpl')
+def faqpl():
+   return render_template('faqpl.html', page=config["SITE_DATA"])
+
+@app.route('/termssv')
+def termssv():
+   return render_template('termssv.html', page=config["SITE_DATA"])
+
+@app.route('/faqsv')
+def faqsv():
+   return render_template('faqsv.html', page=config["SITE_DATA"])
+
+@app.route('/termsde')
+def termsde():
+   return render_template('termsde.html', page=config["SITE_DATA"])
+
+@app.route('/faqde')
+def faqde():
+   return render_template('faqde.html', page=config["SITE_DATA"])
+
+@app.route('/termsar')
+def termsar():
+   return render_template('termsar.html', page=config["SITE_DATA"])
+
+@app.route('/faqar')
+def faqar():
+   return render_template('faqar.html', page=config["SITE_DATA"])
+
+@app.route('/ja')
+def ja():
+   return render_template('uploadja.html', page=config["SITE_DATA"])
+
+@app.route('/es')
+def es():
+   return render_template('uploades.html', page=config["SITE_DATA"])
+
+@app.route('/pl')
+def pl():
+   return render_template('uploadpl.html', page=config["SITE_DATA"])
+
+@app.route('/sv')
+def sv():
+   return render_template('uploadsv.html', page=config["SITE_DATA"])
+
+@app.route('/de')
+def de():
+   return render_template('uploadde.html', page=config["SITE_DATA"])
+
+@app.route('/ar')
+def ar():
+   return render_template('uploadar.html', page=config["SITE_DATA"])
+
 # Route that will process the file upload
 @app.route('/file', methods=['POST'])
 def file():
@@ -66,19 +138,19 @@ def error_page(error, code):
 
 @app.errorhandler(404)
 def page_not_found(e):
-    return error_page(error="404 dude. Check the URL.", code=404), 404
+    return error_page(error="404 dude. Check the URL.<br>え、何探した？<br>Donde estas buscando?<br>404, ziom. Sprawdź link.<br>404 grabben. Kolla url.<br>404 junge. Überprüfe die url.<br>خطأ 404 - تأكد من الرابط يا عزيزي", code=404), 404
 
 @app.errorhandler(500)
 def internal_error(e):
-    return error_page(error="Even I don't know what happened", code=500), 500
+    return error_page(error="Even I don't know what happened<br>全然わからない<br>Que paso?<br>Nawet ja nie wiem o co chodzi<br>Inte ens jag har en anning om vad som hänt<br>Sogar ich weißt nicht was passiert ist<br>حتى أنا لا أعلم ما الذي حدث", code=500), 500
 
 @app.errorhandler(403)
 def no_permission(e):
-    return error_page(error="No no", code=403), 403
+    return error_page(error="No no<br>ダメ<br>Que estas haciendo?<br>No chyba nie<br>Ajabaja<br>Nein nein<br>عيب عليك!", code=403), 403
 
 @app.errorhandler(413)
 def too_big(e):
-    return error_page(error="Did you even check the Terms dude?", code=413), 413
+    return error_page(error="Did you even check the Terms dude?<br>馬鹿、用語をチェック<br>Usted incluso comprobar los terminos?<br>Najpierw przeczytaj regulamin, ok?<br>Kollade du ens användarvilkoren???<br>Hast du übehaupt die Nutzungsbedingungen gelesen?<br>هل قرأت شروط الرفع يا رجل؟", code=413), 413
 
 # Start app
 if __name__ == '__main__':

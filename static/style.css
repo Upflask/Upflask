@@ -140,3 +140,18 @@ body {
 *::-webkit-scrollbar {
   width: 0 !important;
 }
+
+.language {
+  margin-top: 20px;
+  margin-bottom: -50px;
+  text-align: center;
+}
+
+.language a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.language a:active, .language a:hover {
+  color: #b2b2b2;
+}
