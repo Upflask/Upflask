@@ -85,9 +85,9 @@ def termsar():
 def faqar():
    return render_template('faqar.html', page=config["SITE_DATA"])
 
-@app.route('/ja')
-def ja():
-   return render_template('uploadja.html', page=config["SITE_DATA"])
+@app.route('/jp')
+def jp():
+   return render_template('uploadjp.html', page=config["SITE_DATA"])
 
 @app.route('/es')
 def es():
