@@ -2,18 +2,19 @@
 A Flask file uploader
 
 Requirements:
-Python3  
+Python 3.5  
 Flask  
+Flask-Cache  
 A reverse proxy (Nginx)  
 Virtualenv (optional)  
-tmux (optional but highly recommened)  
-Gunicorn (optional but makes Nginx easier)  
+tmux (optional)  
+Gunicorn or uWSGI (optional but makes Nginx easier)  
 
 How to install on Linux:
 1. git clone
 2. Make virtual environment (optional but recommened) with virtualenv
 3. Source into that virtualenv
-4. pip3 install flask
+4. pip3.5 install flask Flask-Cache
 5. Configure the "conf.py" file
 6. Create two folders, f/ and file/
 7. chmod +x server.py
@@ -22,9 +23,9 @@ How to install on Linux:
 
 How to install on Cygwin/Babun:
 1. git clone
-2. install python3
-3. Somehow install easy_install for python3 and install pip3 or get python3 to install pip3
-4. pip3 install flask
+2. Install python3.5
+3. Somehow install easy_install for python3.5 and install pip3.5 or get python3.5 to install pip3.5
+4. pip3.5 install flask Flask-Cache
 5. If any errno11 errors occur, rebase and try again
 6. Configure the "conf.py" file
 7. Create two folders, f/ and file/
@@ -33,12 +34,12 @@ How to install on Cygwin/Babun:
 10. That's it.
 
 How to install on Windows (Not tested but should work in theory):
-1. Install the latest version of Python3 for Windows
+1. Install the latest version of Python3.5 for Windows
 2. (Optional) Install Git
-3. pip or pip3 install flask
+3. pip3.5 install flask Flask-Cache
 4. Configure the "conf.py" file
 5. Create two folders, f/ and file/
-8. python or python3 or python3.5 server.py
+8. python3.5 server.py
 9. That's it.
 
 ## FAQ
@@ -63,8 +64,14 @@ I'm too lazy to completely seperate English from the other languages, so feel fr
 
 ## Troubleshooting
 
-Non-ASCII character issues:
-DON'T USE PYTHON2, USE PYTHON3  
+Non-ASCII character issues:  
+DON'T USE PYTHON2, USE PYTHON3.5  
 
-Flask module not found:
-pip3 install flask (or sudo)
+Any other errors:  
+Check to make sure you are using Python 3.5 and not 3.4 or any older version
+
+Flask module not found:  
+pip3.5 install flask (or sudo)
+
+Import module flask.ext.cache not found:  
+pip3.5 install Flask-Cache (or sudo)

@@ -1,12 +1,16 @@
-#!/usr/bin/python3
+#!/usr/bin/python3.5
 import os
 from flask import Flask, render_template, request, redirect, url_for, send_from_directory, abort
 from werkzeug import secure_filename
 from flask import Markup
 import threading
+from flask.ext.cache import Cache
 
 # Initialize the Flask application
 app = Flask(__name__)
+
+# Caching
+cache = Cache(app,config={'CACHE_TYPE': 'simple'})
 
 # Config file
 from conf import config
