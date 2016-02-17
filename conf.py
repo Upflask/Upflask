@@ -8,6 +8,9 @@ config["PORT"] = 5000
 # Enable for debugging
 config["DEBUG"] = False
 
+# Not sure if it works AT ALL, but if it does...
+config["THREADED"] = True
+
 # Site info displayed to the user
 config["SITE_DATA"] = {
   "title": "Upflask"

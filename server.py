@@ -3,6 +3,7 @@ import os
 from flask import Flask, render_template, request, redirect, url_for, send_from_directory, abort
 from werkzeug import secure_filename
 from flask import Markup
+import threading
 
 # Initialize the Flask application
 app = Flask(__name__)
@@ -157,6 +158,7 @@ if __name__ == '__main__':
   app.run(
     port=config["PORT"],
     host=config["HOST"],
-    debug=config["DEBUG"]
+    debug=config["DEBUG"],
+    threaded=config["THREADED"]
   )
 
