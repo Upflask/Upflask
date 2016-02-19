@@ -114,6 +114,19 @@ def de():
 def ar():
    return render_template('uploadar.html', page=config["SITE_DATA"])
 
+@app.route('/index.html')
+def html():
+   return render_template('upload.html', page=config["SITE_DATA"])
+
+@app.route('/index.php')
+def php():
+   return render_template('upload.html', page=config["SITE_DATA"])
+
+# Robots
+@app.route('/robots.txt')
+def robots():
+   return app.send_static_file('robots.txt')
+
 # Route that will process the file upload
 @app.route('/file', methods=['POST'])
 def file():
