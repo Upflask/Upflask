@@ -1,4 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700&subset=latin,latin-ext);
 
 /* Being lazy 101 */
 * {
@@ -8,7 +9,7 @@
 }
 
 body {
-  font-family: "Open Sans", "Lato", sans-serif;
+  font-family: "Inconsolata" ,"Lato", sans-serif;
   color: #ffffff;
   background-color: #1d1d1d;
 }
@@ -29,7 +30,7 @@ body {
   padding: 10px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 50vh;
+  margin-top: 45vh;
   transform: translateY(-50%)
 }
 
@@ -37,7 +38,7 @@ body {
   text-align: center;
   font-size: 8pt;
   color: #AAAAAA;
-  animation: appear 0.75s ease-out;
+  animation: appear 0.5s ease-out;
 }
 
 .title {
@@ -45,7 +46,7 @@ body {
   font-weight: 300;
   margin-bottom: 5px;
   text-align: center;
-  animation: appear 0.75s ease-out;
+  animation: appear 0.5s ease-out;
 }
 
 .links {
@@ -60,7 +61,7 @@ body {
   display: inline-block;
   padding: 5px;
   width: 15%;
-  animation: rise 1s ease-out;
+  animation: rise 0.5s ease-out;
 }
 
 @media all and (max-width: 360px){
@@ -92,14 +93,14 @@ body {
 .uploadForm {
   width: 100%;
   text-align: center;
-  animation: appear 0.75s ease-out;
+  animation: appear 0.5s ease-out;
 }
 
 .uploadButton {
   position: relative;
   margin-right: auto;
   margin-left: auto;
-  max-width: 100%;
+  max-width: 50%;
   cursor: pointer;
   background-color: #227399;
   border-radius: 10px;
@@ -143,7 +144,7 @@ body {
 
 .language {
   margin-top: 20px;
-  margin-bottom: -50px;
+  margin-top: 185px;
   text-align: center;
 }
 

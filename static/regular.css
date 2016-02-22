@@ -1,4 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700&subset=latin,latin-ext);
 
 /* Being lazy 101 */
 * {
@@ -8,7 +9,7 @@
 }
 
 body {
-  font-family: "Open Sans", "Lato", sans-serif;
+  font-family: "Inconsolata", "Lato", sans-serif;
   color: #ffffff;
   background-color: #1d1d1d;
 }
