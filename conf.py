@@ -1,6 +1,6 @@
 config = dict()
 
-# Recommened to be set to 127.0.0.1 for production, and then setup Nginx to this url
+# Recommended to be set to 127.0.0.1 for production, and then setup Nginx to this URL
 # For debugging, feel free to use whatever host you want ("0.0.0.0")
 config["HOST"] = "127.0.0.1"
 config["PORT"] = 5000
