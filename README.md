@@ -8,13 +8,13 @@
 - A reverse proxy (Nginx)  
 - Virtualenv *(optional)*
 - tmux *(optional)*
-- Gunicorn or uWSGI *(optional but makes Nginx easier)*
+- Gunicorn or uWSGI *(optional, but makes Nginx easier)*
 
 ***
 
 ### Installation
 #### Linux
-It's recommended, although optional, to create a virtual environment with virtualenv.
+It's recommended, although optional, to create a virtual environment with *virtualenv*.
 
 Clone this repo, create a virtual environment, and then source into it.
 ```bash
@@ -63,6 +63,7 @@ I wanted to create a clone of that uploader's functions, but in Python.
 
 #### This looks like...Quadfile
 Yeah, I stole the static page.
+
 However, the actual Python uploader is completely different from Quadfile, since <a
 href="https://twitter.com/QuadPiece">QuadPiece</a> hadn't submitted the source code at the time of Upflask's inception.
 
@@ -86,9 +87,9 @@ Check to make sure you are using Python 3.5 and not 3.4 or any older version
 
 #### Flask module not found:
 ```bash
-$ pip3.5 install flask (or sudo)
+$ pip3.5 install flask
 ```
 #### Import module flask.ext.cache not found:  
 ```bash
-$ pip3.5 install Flask-Cache (or sudo)
+$ pip3.5 install Flask-Cache
 ```
