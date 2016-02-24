@@ -82,6 +82,14 @@ def termsde():
 def faqde():
    return render_template('faqde.html', page=config["SITE_DATA"])
 
+@app.route('/termsnl')
+def termsnl():
+    return render_template('termsnl.html', page=config["SITE_DATA"])
+
+@app.route('/faqnl')
+def faqnl():
+    return render_template('faqnl.html', page=config["SITE_DATA"])
+
 @app.route('/termsar')
 def termsar():
    return render_template('termsar.html', page=config["SITE_DATA"])
@@ -109,6 +117,10 @@ def sv():
 @app.route('/de')
 def de():
    return render_template('uploadde.html', page=config["SITE_DATA"])
+
+@app.route('/nl')
+def nl():
+   return render_template('uploadnl.html', page=config["SITE_DATA"])
 
 @app.route('/ar')
 def ar():
