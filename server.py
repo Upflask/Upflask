@@ -180,7 +180,7 @@ def no_permission(e):
 
 @app.errorhandler(413)
 def too_big(e):
-    return error_page(error="Did you even check the Terms dude?<br>馬鹿、用語をチェック<br>Usted incluso comprobar los terminos?<br>Najpierw przeczytaj regulamin, ok?<br>Kollade du ens användarvilkoren???<br>Hast du übehaupt die Nutzungsbedingungen gelesen?<br>Heb je de voorwaarden wel gelezen of niet?<br>ﻪﻟ ﻕﺭﺄﺗ ﺵﺭﻮﻃ ﺎﻟﺮﻔﻋ ﻱﺍ ﺮﺠﻟ؟", code=413), 413 413
+    return error_page(error="Did you even check the Terms dude?<br>馬鹿、用語をチェック<br>Usted incluso comprobar los terminos?<br>Najpierw przeczytaj regulamin, ok?<br>Kollade du ens användarvilkoren???<br>Hast du übehaupt die Nutzungsbedingungen gelesen?<br>Heb je de voorwaarden wel gelezen of niet?<br>ﻪﻟ ﻕﺭﺄﺗ ﺵﺭﻮﻃ ﺎﻟﺮﻔﻋ ﻱﺍ ﺮﺠﻟ؟", code=413), 413
 
 # Start app
 if __name__ == '__main__':
