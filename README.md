@@ -43,18 +43,6 @@ $ chmod +x server.py
 $ ./server.py
 ```
 
-#### Windows (Untested, should work in theory)
-Ensure the latest version of Python3.5 for Windows is installed. Also install git.
-```bash
-> git clone https://github.com/Upflask/Upflask
-> pip3.5 install flask Flask-Cache
-```
-Similar to both installations, afterwards, configure the `conf.py` file. Create **two** folders, `f/` and `file/`.
-```bash
-> chmod +x server.py
-> python3.5 server.py
-```
-
 ## FAQ
 
 #### Why did you make this?  
@@ -71,16 +59,13 @@ href="https://twitter.com/QuadPiece">QuadPiece</a> hadn't submitted the source c
 No idea, but you can try asking me on my Twitter.  
 
 #### You didn't make a Mac tutorial
-Coming soon.
+I don't own a Mac therefore, will not.
 
-#### WHY IS THERE OTHER LANGUAGES IN HERE??  
-I'm too lazy to separate the languages. Also, I'm really bad at English.
+### Do I have to use Python3.5?
+No but you **MUST** use `Python3` as it was created in `Python3.5`, however `Python3.4 or older` will work just fine.
 
 ***
 ## Troubleshooting
-
-#### Non-ASCII character issues:  
-DON'T USE PYTHON2, USE PYTHON3.5  
 
 #### Any other errors:  
 Check to make sure you are using Python 3.5 and not 3.4 or any older version
