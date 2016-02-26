@@ -9,6 +9,12 @@ config["PORT"] = 5000
 # Enable for debugging.
 config["DEBUG"] = False
 
+# This is the path to the upload directory
+config['UPLOAD_FOLDER'] = 'f/'
+
+# This is to set the File size limit (In MB, change the 40)
+config['MAX_CONTENT_LENGTH'] = 40 * 1024 * 1024
+
 # These are the extension that we are accepting to be uploaded
 config['ALLOWED_EXTENSIONS'] = set(['ass', 'odt', 'docx', 'doc', 'css', 'zip', 'ogg', 'mp3', 'wmv', 'mp4', 'txt', 'webm', 'gif', 'jpeg', 'jpg', 'png'])
 
