@@ -9,6 +9,9 @@ config["PORT"] = 5000
 # Enable for debugging.
 config["DEBUG"] = False
 
+# These are the extension that we are accepting to be uploaded
+config['ALLOWED_EXTENSIONS'] = set(['ass', 'odt', 'docx', 'doc', 'css', 'zip', 'ogg', 'mp3', 'wmv', 'mp4', 'txt', 'webm', 'gif', 'jpeg', 'jpg', 'png'])
+
 # Threading with just Python, use Gunicorn or uWSGI for multi-threading.
 config["THREADED"] = True
 
