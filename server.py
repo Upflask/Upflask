@@ -18,16 +18,13 @@ from conf import config
 # This is the path to the upload directory
 app.config['UPLOAD_FOLDER'] = 'f/'
 
-# These are the extension that we are accepting to be uploaded
-app.config['ALLOWED_EXTENSIONS'] = set(['ass', 'odt', 'docx', 'doc', 'css', 'zip', 'ogg', 'mp3', 'wmv', 'mp4', 'txt', 'webm', 'gif', 'jpeg', 'jpg', 'png'])
-
 # This is to set the File size limit (In MB, change the 40)
 app.config['MAX_CONTENT_LENGTH'] = 40 * 1024 * 1024
 
 # For a given file, return whether it's an allowed type or not
 def allowed_file(filename):
     return '.' in filename and \
-           filename.rsplit('.', 1)[1] in app.config['ALLOWED_EXTENSIONS']
+           filename.rsplit('.', 1)[1] in config['ALLOWED_EXTENSIONS']
 
 # STATIC AND TEMPLATES
 @app.route('/')
