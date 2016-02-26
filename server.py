@@ -15,12 +15,6 @@ cache = Cache(app,config={'CACHE_TYPE': 'simple'})
 # Config file
 from conf import config
 
-# This is the path to the upload directory
-app.config['UPLOAD_FOLDER'] = 'f/'
-
-# This is to set the File size limit (In MB, change the 40)
-app.config['MAX_CONTENT_LENGTH'] = 40 * 1024 * 1024
-
 # For a given file, return whether it's an allowed type or not
 def allowed_file(filename):
     return '.' in filename and \
@@ -147,7 +141,7 @@ def file():
         filename = secure_filename(file.filename)
         # Move the file form the temporal folder to
         # the upload folder we setup
-        file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+        file.save(os.path.join(config['UPLOAD_FOLDER'], filename))
         # Redirect the user to the uploaded_file route, which
         # will basicaly show on the browser the uploaded file
         return redirect(url_for('uploaded_file',
@@ -156,7 +150,7 @@ def file():
 # Returns the filename to the user
 @app.route('/f/<filename>')
 def uploaded_file(filename):
-    return send_from_directory(app.config['UPLOAD_FOLDER'],
+    return send_from_directory(config['UPLOAD_FOLDER'],
                                filename)
 
 # Error handling
