@@ -16,7 +16,7 @@ config['UPLOAD_FOLDER'] = 'f/'
 config['MAX_CONTENT_LENGTH'] = 40 * 1024 * 1024
 
 # These are the extension that we are accepting to be uploaded
-config['ALLOWED_EXTENSIONS'] = set(['ass', 'odt', 'docx', 'doc', 'css', 'zip', 'ogg', 'mp3', 'wmv', 'mp4', 'txt', 'webm', 'gif', 'jpeg', 'jpg', 'png'])
+config['ALLOWED_EXTENSIONS'] = set(['ass', 'odt', 'docx', 'doc', 'css', 'zip', 'ogg', 'mp3', 'wmv', 'mp4', 'txt', 'webm', 'gif', 'jpeg', 'jpg', 'png','psd','mkv','flac'])
 
 # Threading with just Python, use Gunicorn or uWSGI for multi-threading.
 config["THREADED"] = True
