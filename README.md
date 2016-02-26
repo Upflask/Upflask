@@ -46,17 +46,17 @@ $ ./server.py
 ## FAQ
 
 #### Why did you make this?  
-I used to have a PHP file uploader just called "Upload!", but it was PHP.
+I used to have a PHP file uploader just called `Upload!`, but it was PHP.
 I wanted to create a clone of that uploader's functions, but in Python.  
 
 #### This looks like...Quadfile
-Yeah, I stole the static page.
+Yeah, I stole all the Jinja2 template files.
 
 However, the actual Python uploader is completely different from Quadfile, since <a
 href="https://twitter.com/QuadPiece">QuadPiece</a> hadn't submitted the source code at the time of Upflask's inception.
 
 #### Why doesn't X work?  
-No idea, but you can try asking me on my Twitter.  
+No idea, but you can either sumbit an issue here or try asking me on my Twitter.  
 
 #### You didn't make a Mac tutorial
 I don't own a Mac therefore, will not.
