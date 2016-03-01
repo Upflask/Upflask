@@ -89,6 +89,14 @@ def termsar():
 def faqar():
    return render_template('faqar.html', page=config["SITE_DATA"])
 
+@app.route('/termsfi')
+def termsfi():
+   return render_template('termsfi.html', page=config["SITE_DATA"])
+
+@app.route('/faqfi')
+def faqfi():
+   return render_template('faqfi.html', page=config["SITE_DATA"])
+
 @app.route('/jp')
 def jp():
    return render_template('uploadjp.html', page=config["SITE_DATA"])
@@ -116,6 +124,10 @@ def nl():
 @app.route('/ar')
 def ar():
    return render_template('uploadar.html', page=config["SITE_DATA"])
+
+@app.route('/fi')
+def fi():
+   return render_template('uploadfi.html', page=config["SITE_DATA"])
 
 @app.route('/index.html')
 def html():
