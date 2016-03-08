@@ -96,6 +96,14 @@ def termsfi():
 @app.route('/faqfi')
 def faqfi():
    return render_template('faqfi.html', page=config["SITE_DATA"])
+   
+@app.route('/termssr')
+def termssr():
+   return render_template('termssr.html', page=config["SITE_DATA"])
+
+@app.route('/faqsr')
+def faqsr():
+   return render_template('faqsr.html', page=config["SITE_DATA"])
 
 @app.route('/jp')
 def jp():
@@ -128,6 +136,10 @@ def ar():
 @app.route('/fi')
 def fi():
    return render_template('uploadfi.html', page=config["SITE_DATA"])
+   
+@app.route('/sr')
+def sr():
+   return render_template('uploadsr.html', page=config["SITE_DATA"])
 
 @app.route('/index.html')
 def html():
