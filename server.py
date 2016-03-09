@@ -1,4 +1,4 @@
-#!/usr/bin/python3.5
+#!/usr/bin/python3
 import os
 from flask import Flask, render_template, request, redirect, url_for, send_from_directory, abort
 from werkzeug import secure_filename
